@@ -10,20 +10,20 @@
       />
     </div>
     <ul
-      class="bg-weather-secondary text-white w-full shadow-md py-2 px-1 top-[66px]"
+      class="bg-weather-secondary text-white w-full shadow-md py-1 px-1 top-0"
       v-if="mapboxSearchResults"
     >
-      <p class="py-2" v-if="searchError">
+      <p class="py-1" v-if="searchError">
         Sorry, something went wrong, please try again.
       </p>
-      <p class="py-2" v-if="!searchError && mapboxSearchResults.length === 0">
+      <p class="py-1" v-if="!searchError && mapboxSearchResults.length === 0">
         No results match your query, try a different term.
       </p>
       <template v-else>
         <li
           v-for="searchResult in mapboxSearchResults"
           :key="searchResult.id"
-          class="py-2 cursor-pointer"
+          class="py-1 cursor-pointer"
         >
           {{ searchResult.place_name }}
         </li>
