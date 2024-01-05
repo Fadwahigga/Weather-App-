@@ -10,6 +10,10 @@ export default {
     },
     fontFamily: {
       Roboto:["Roboto,sans-serif"]
+    },
+    container: {
+      padding: "2rem",
+      center:true
     }
   },
   plugins: [],
