@@ -9,12 +9,13 @@ export default {
       },
     },
     fontFamily: {
-      Roboto:["Roboto,sans-serif"]
+      Roboto: ["Roboto,sans-serif"],
     },
     container: {
       padding: "2rem",
-      center:true
-    }
+      center: true,
+    },
+    screens: { sm: "640px", md: "768" },
   },
   plugins: [],
 };
